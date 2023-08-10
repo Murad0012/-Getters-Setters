@@ -9,14 +9,14 @@
         public double Amount;
         public void IncreaseBalance(double amount)
         {
-            if (amount <= 0) { return; }
-            Balance += amount;
+             if(amount <= 0) {return;}
+             Balance += amount;
         }
 
-        public void Call(double amount)
-        {
-            if (Tarif > Balance) { Console.WriteLine("not enough balance"); return; }
-            Balance -= Tarif;
+        public void Call(double amount) 
+        { 
+            if(Tarif > Balance) {Console.WriteLine("not enough balance");return;}
+            Balance -= amount;
         }
     }
     internal class Program
@@ -27,7 +27,7 @@
             {
                 CarrierName = "Azercell",
                 Number = "+9940555633438",
-                Balance = 1,
+                Balance = 2,
                 Tarif = 0.05,
                 Amount = 2
             };
